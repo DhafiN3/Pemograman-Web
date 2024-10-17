@@ -1,0 +1,78 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #c4c4c4; /* Warna latar belakang seperti pada screenshot */
+}
+
+.calculator {
+    border-radius: 15px;
+    width: 400px;
+    background-color: #0E2D45; /* Warna background kalkulator sesuai screenshot */
+    padding: 20px;
+    box-shadow: 0px 0px 20px #0000004d;
+}
+
+.calculator-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #122738;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.operation {
+    text-align: right;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+}
+
+.result {
+    text-align: right;
+    font-size: 3rem;
+    color: white;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    height: 70px;
+    font-size: 1.5rem;
+    background-color: #324c5c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button.operator {
+    background-color: #00796B; /* Warna tombol operator */
+}
+
+button.clear {
+    background-color: #D32F2F; /* Warna tombol AC */
+}
+
+button.equal-sign {
+    background-color: #2e2f30; /* Warna tombol sama dengan */
+}
+
+button.zero {
+    grid-column: span 2; /* Membuat tombol 0 lebih lebar */
+}
+
+button:hover {
+    background-color: #455A64;
+}
